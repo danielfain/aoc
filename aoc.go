@@ -5,6 +5,7 @@ import (
 	"strings"
 
 	"fain.dev/aoc/day1"
+	"fain.dev/aoc/day2"
 )
 
 func main() {
@@ -19,6 +20,7 @@ func main() {
 	}
 
 	lines := strings.Split(string(buf), "\n")
+	lines = lines[:len(lines)-1]
 
 	switch day {
 	case "day1":
@@ -26,6 +28,11 @@ func main() {
 			day1.RunPart1(lines)
 		} else {
 			day1.RunPart2(lines)
+		}
+	case "day2":
+		if part == "part1" {
+			day2.RunPart1(lines)
+		} else {
 		}
 	}
 }
