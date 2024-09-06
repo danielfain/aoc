@@ -43,6 +43,8 @@ func main() {
 	case "day4":
 		if part == "part1" {
 			day4.Part1(lines)
+		} else {
+			day4.Part2(lines)
 		}
 	}
 }
