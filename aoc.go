@@ -7,6 +7,7 @@ import (
 	"fain.dev/aoc/day1"
 	"fain.dev/aoc/day2"
 	"fain.dev/aoc/day3"
+	"fain.dev/aoc/day4"
 )
 
 func main() {
@@ -38,6 +39,10 @@ func main() {
 	case "day3":
 		if part == "part1" {
 			day3.Part1(lines)
+		}
+	case "day4":
+		if part == "part1" {
+			day4.Part1(lines)
 		}
 	}
 }
